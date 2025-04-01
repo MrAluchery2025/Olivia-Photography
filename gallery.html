@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Olivia Hart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navigation Bar -->
+    <header class="bg-blue-900 text-white py-5 px-10 shadow-lg fixed top-0 w-full flex justify-between items-center z-50">
+        <h1 class="text-xl font-bold">Olivia Hart | Photography</h1>
+        <button class="menu-toggle text-2xl md:hidden" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul class="hidden md:flex space-x-6" id="nav-menu">
+                <li><a href="index.html" class="hover:bg-yellow-400 hover:text-blue-900 px-4 py-2 rounded transition">Home</a></li>
+                <li><a href="about.html" class="hover:bg-yellow-400 hover:text-blue-900 px-4 py-2 rounded transition">About</a></li>
+                <li><a href="portfolio.html" class="hover:bg-yellow-400 hover:text-blue-900 px-4 py-2 rounded transition">Portfolio</a></li>
+                <li><a href="gallery.html" class="hover:bg-yellow-400 hover:text-blue-900 px-4 py-2 rounded transition">Gallery</a></li>
+                <li><a href="contact.html" class="hover:bg-yellow-400 hover:text-blue-900 px-4 py-2 rounded transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Gallery Section -->
+    <section class="mt-24 px-6 md:px-20 py-16 bg-white shadow-lg text-center">
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">Gallery</h2>
+        <p class="text-lg text-gray-700 mb-10">A visual showcase of my latest and favorite moments captured through the lens.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="bmw.jpg" alt="Gallery Image 1" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="building.jpg" alt="Gallery Image 2" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="sunset.jpg" alt="Gallery Image 3" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="soccer.jpg" alt="Gallery Image 4" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="auto.jpg" alt="Gallery Image 5" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="girona.jpg" alt="Gallery Image 6" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="couple.jpg" alt="Gallery Image 7" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="boat.jpg" alt="Gallery Image 8" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <img src="train.jpg" alt="Gallery Image 9" class="w-full h-64 object-cover hover:scale-105 transition-transform">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-5 mt-10 shadow-lg">
+        <p>&copy; 2025 Olivia Hart. Capturing moments, creating memories.</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
